@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" style="-fx-background-color: #d2f2cd;"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+	<HBox style="-fx-background-color: #95CA74;" spacing="8"
+			minHeight="60" maxHeight="60" alignment="CENTER">
+			<children>
+				<Label text="Home">
+					<font>
+						<Font size="34.0" />
+					</font>
+				</Label>
+				<Label style="-fx-background-color: #6aaf3f;"
+					fx:id="lblUserName" HBox.hgrow="ALWAYS" maxWidth="Infinity">
+					<font>
+						<Font size="34.0" />
+					</font>
+				</Label>
+				<ImageView fitHeight="50" preserveRatio="true">
+					<image>
+						<Image url="@../images/profile.jpg" />
+					</image>
+				</ImageView>
+			</children>
+		</HBox>
+		<VBox VBox.vgrow="ALWAYS" spacing="8">
+			<children>
+				<HBox VBox.vgrow="ALWAYS" alignment="CENTER">
+					<StackPane HBox.hgrow="ALWAYS" alignment="CENTER">
+						<Button fx:id="btnLezioni" prefHeight="110.0"
+							prefWidth="240.0" text="Lezioni" textAlignment="CENTER">
+							<font>
+								<Font size="32.0" />
+							</font>
+						</Button>
+					</StackPane>
+					<StackPane HBox.hgrow="ALWAYS" alignment="CENTER">
+						<Button fx:id="btnPrenotazioni" prefHeight="110.0"
+							prefWidth="240.0" text="Prenotazioni" textAlignment="CENTER">
+							<font>
+								<Font size="32.0" />
+							</font>
+						</Button>
+					</StackPane>
+				</HBox>
+				<HBox VBox.vgrow="ALWAYS" alignment="CENTER">
+					<StackPane HBox.hgrow="ALWAYS" alignment="CENTER">
+						<Button fx:id="btnGare" prefHeight="110.0"
+							prefWidth="240.0" text="Gare" textAlignment="CENTER">
+							<font>
+								<Font size="32.0" />
+							</font>
+						</Button>
+					</StackPane>
+					<StackPane HBox.hgrow="ALWAYS" alignment="CENTER">
+						<Button fx:id="btnEscursioni" prefHeight="110.0"
+							prefWidth="240.0" text="Escursioni" textAlignment="CENTER">
+							<font>
+								<Font size="32.0" />
+							</font>
+						</Button>
+					</StackPane>
+				</HBox>
+			</children>
+		</VBox>
+	</children>
+</VBox>
