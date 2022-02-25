@@ -1,11 +1,12 @@
 language: java
 sudo: false
-script: mvn clean verify
 
 addons:
   sonarcloud:
     organization: "jimciccio"
     token:
-      secure: 43ae381dd93666a206269f7a60af872f33b94eeb
-script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+      secure: "43ae381dd93666a206269f7a60af872f33b94eeb"
+
+script: 
+-mvn clean verify
+-sonar-scanner
